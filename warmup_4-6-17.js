@@ -1,4 +1,4 @@
-//Write out the skeleton of a RESTful Express server.
+//Create a RESTful Express server.
 
 //CONFIGURATION
 var express = require('express');
