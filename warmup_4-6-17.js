@@ -1,4 +1,4 @@
-//Create a RESTful Express server.
+//Create a RESTful server.
 
 //CONFIGURATION
 var express = require('express');
@@ -39,7 +39,7 @@ app.put('/customers/:id', function (req, res) {
 
 //delete unicorn :(
 app.delete('/customers/:id', function (req, res) {
-  var unicornLocation = customers.filter(function (num) {
+  var custLocation = customers.filter(function (num) {
     return num.id === parseInt(req.params.id);
   });
   var custToChange = unicorns.indexOf(custLocation[0]);
